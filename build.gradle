@@ -1,0 +1,13 @@
+description = "Gradle multimodule project with vulns"
+
+allprojects {
+  group = "io.snyk.goof"
+  version = "1.0-dev"
+}
+
+subprojects {
+  version = rootProject.version
+  repositories {
+    jcenter()
+  }
+}
